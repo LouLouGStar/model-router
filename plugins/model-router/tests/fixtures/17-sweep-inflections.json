@@ -1,0 +1,8 @@
+{
+ "session_id": "test",
+ "transcript_path": "/nonexistent/transcript.jsonl",
+ "cwd": "/tmp",
+ "permission_mode": "default",
+ "hook_event_name": "UserPromptSubmit",
+ "prompt": "Ersetze in allen Dateien jeden Import von foo durch bar"
+}

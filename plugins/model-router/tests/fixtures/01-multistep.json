@@ -1,0 +1,8 @@
+{
+ "session_id": "test",
+ "transcript_path": "/nonexistent/transcript.jsonl",
+ "cwd": "/tmp",
+ "permission_mode": "default",
+ "hook_event_name": "UserPromptSubmit",
+ "prompt": "Bitte drei Dinge:\n- übersetze die drei Sätze wörtlich ins Englische\n- schreib dann eine freundliche Mail an den Vermieter wegen der Heizung\n- danach entscheide, ob SQLite oder JSON-Dateien für den Planer-Bot besser sind"
+}

@@ -1,0 +1,8 @@
+{
+  "name": "model-router",
+  "version": "1.0.0",
+  "description": "Routes multi-step work to the cheapest adequate model (Haiku, Sonnet or Opus) through model-pinned subagents and workflows, verifies results with a fresh-context reviewer and escalates one tier on failure. Single steps stay inline; only a bulky self-contained single job goes to one worker.",
+  "author": { "name": "DieGrünis" },
+  "license": "MIT",
+  "keywords": ["model-routing", "cost", "subagents", "workflow", "haiku", "sonnet", "opus"]
+}

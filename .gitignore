@@ -1,0 +1,10 @@
+# Eval-Ergebnisse (claude plugin eval)
+evals/results/
+plugins/*/evals/results/
+
+# Logs und Caches
+*.log
+__pycache__/
+
+# macOS
+.DS_Store

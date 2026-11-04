@@ -1,0 +1,8 @@
+{
+ "session_id": "test",
+ "transcript_path": "/nonexistent/transcript.jsonl",
+ "cwd": "/tmp",
+ "permission_mode": "default",
+ "hook_event_name": "UserPromptSubmit",
+ "prompt": "Schreib mir ein Haiku über den Herbst, then a short fable about a fox, then call it my magnum opus"
+}

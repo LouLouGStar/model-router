@@ -1,0 +1,28 @@
+{
+  "description": "model-router: injects the routing protocol before every prompt and after session start/compaction",
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"${CLAUDE_PLUGIN_ROOT}/hooks/route-prompt.sh\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "matcher": "startup|resume|clear|compact",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"${CLAUDE_PLUGIN_ROOT}/hooks/session-context.sh\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}

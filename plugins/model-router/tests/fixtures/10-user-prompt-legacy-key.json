@@ -1,0 +1,6 @@
+{
+ "session_id": "test",
+ "cwd": "/tmp",
+ "hook_event_name": "UserPromptSubmit",
+ "user_prompt": "bitte erledige diese drei aufgaben parallel"
+}

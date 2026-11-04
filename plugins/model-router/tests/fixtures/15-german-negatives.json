@@ -1,0 +1,8 @@
+{
+ "session_id": "test",
+ "transcript_path": "/nonexistent/transcript.jsonl",
+ "cwd": "/tmp",
+ "permission_mode": "default",
+ "hook_event_name": "UserPromptSubmit",
+ "prompt": "Also gut, alles klar: der Kurzschluss-Abschnitt der Schnellstart-Anleitung zum Entwurfsmuster geht an den Reviewer, die Sicherheitslücke ist allerdings jedenfalls bekannt"
+}
