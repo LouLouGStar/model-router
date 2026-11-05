@@ -20,6 +20,11 @@ Kompletter Neubau. Das Routing läuft nicht mehr nur über eine Skill, die Claud
 - `route`-Skill: vollständige Prozedur (Erkennung, Brief, Prüfung, Eskalation, Report, Workflow-Aufruf) statt der fünf Kurzschritte; `$ARGUMENTS` wird als Aufgabe behandelt.
 - README neu geschrieben (Deutsch, mit englischem Quick start): Installation für andere, Tier-Tabelle, Kosten, FAQ, Tests.
 
+### Bekannte Einschränkungen
+- Headless (`claude -p`, Evals, Agent SDK): nur der `SessionStart`-Hook feuert, die Hints-Zeile fehlt; reine Textbatches bleiben dort je nach Modell inline.
+- Ein Hook kann das Session-Modell nicht wechseln; Routing läuft ausschließlich über Subagents und Workflows.
+- Die drei Routing-Evals sind Richtwerte (siehe README, „Entwicklung & Tests“).
+
 ## [0.2.0] – 2026-11-04
 
 ### Hinzugefügt

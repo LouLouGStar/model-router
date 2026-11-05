@@ -188,6 +188,8 @@ claude plugin eval plugins/model-router --runs 1 --no-publish  # sechs Eval-Fäl
 
 Alle Befehle vom Repo-Root aus; `--plugin-dir` siehe Installation.
 
+Hinweis zu den Evals: Die drei Negativfälle (Einzelschritt, Opt-out, Produktions-DB) sind die harten Checks und bestehen zuverlässig. Die drei Routing-Fälle (Mehrschritt, Modell-Override, Sweep) laufen headless, also ohne den `UserPromptSubmit`-Hook und nur mit dem `SessionStart`-Protokoll; dort setzt Opus die Routing-Entscheidung zwar an (die `🧭`-Zeile stimmt), erledigt reine Textarbeit aber teils inline. Sie sind deshalb Richtwerte, keine Pflichtschwelle, und brauchen einen wachen Rechner (jeder Fall ist eine echte Session mit Timeout).
+
 ## Changelog
 
 Siehe [CHANGELOG.md](CHANGELOG.md). Aktuell: 1.0.0 (2026-11-04) – kompletter Neubau mit Hooks, Protokoll, Reviewer, Workflows, Evals und Tests.
