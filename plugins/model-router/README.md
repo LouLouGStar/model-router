@@ -5,9 +5,9 @@ Claude-Code-Plugin: verteilt Mehrschritt-Aufgaben nach Schwierigkeit an Haiku, S
 ## Quick start (English)
 
 ```
-claude plugin marketplace add <GITHUB-USER>/model-router      # add the "diegruenis" marketplace
+claude plugin marketplace add LouLouGStar/model-router      # add the "diegruenis" marketplace
 claude plugin install model-router@diegruenis                 # install the plugin
-# one step instead:  claude plugin install model-router --marketplace <GITHUB-USER>/model-router
+# one step instead:  claude plugin install model-router --marketplace LouLouGStar/model-router
 # then restart Claude Code or run /reload-plugins
 # Work as usual. Single-step prompts: nothing changes (only a bulky self-contained job goes to ONE worker).
 # Multi-step prompts: each step is rated easy/medium/hard, delegated to a Haiku/Sonnet/Opus worker,
@@ -41,25 +41,25 @@ Koordinator (deine Session)
 
 ## Installation für andere
 
-Das Plugin liegt in einem Marketplace namens `diegruenis` (Repo-Root = Marketplace-Root). Ersetze `<GITHUB-USER>` durch den GitHub-Account, der das Repo hostet.
+Das Plugin liegt in einem Marketplace namens `diegruenis` (Repo-Root = Marketplace-Root). Ersetze `LouLouGStar` durch den GitHub-Account, der das Repo hostet.
 
 **Aus GitHub, zwei Schritte:**
 
 ```
-claude plugin marketplace add <GITHUB-USER>/model-router
+claude plugin marketplace add LouLouGStar/model-router
 claude plugin install model-router@diegruenis
 ```
 
 **Aus GitHub, ein Schritt:**
 
 ```
-claude plugin install model-router --marketplace <GITHUB-USER>/model-router
+claude plugin install model-router --marketplace LouLouGStar/model-router
 ```
 
 **In einer laufenden Session:**
 
 ```
-/plugin marketplace add <GITHUB-USER>/model-router
+/plugin marketplace add LouLouGStar/model-router
 /plugin install model-router@diegruenis
 ```
 

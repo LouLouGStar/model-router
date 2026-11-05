@@ -9,11 +9,11 @@ Dieses Repository ist ein Claude-Code-Marketplace (`diegruenis`) mit derzeit ein
 ## Installation
 
 ```bash
-claude plugin marketplace add <GITHUB-USER>/model-router
+claude plugin marketplace add LouLouGStar/model-router
 claude plugin install model-router@diegruenis
 ```
 
-Ersetze `<GITHUB-USER>` durch den GitHub-Account, unter dem dieses Repository liegt.
+Ersetze `LouLouGStar` durch den GitHub-Account, unter dem dieses Repository liegt.
 Zum lokalen Entwickeln: `claude plugin marketplace add /pfad/zum/repo` – das Plugin wird dann direkt aus diesem Ordner geladen.
 
 Die vollständige Dokumentation (Tiers, Steuerung, Agents, Workflows, Kosten, FAQ, Tests) steht in [plugins/model-router/README.md](plugins/model-router/README.md), die Versionshistorie in [plugins/model-router/CHANGELOG.md](plugins/model-router/CHANGELOG.md).
